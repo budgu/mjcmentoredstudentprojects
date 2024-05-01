@@ -1,5 +1,5 @@
 // needed to call nav bar script by replacing script with nav.html
-fetch('/nav.html')
+fetch('projects/nav.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_navbar");
