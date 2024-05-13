@@ -1,0 +1,58 @@
+<!doctype html>
+<style>
+  .paragraph-margin {
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+  .jumbotron{
+    background-color: #B7FCF9;
+  }
+</style>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>MJC Innovation Center: Mentored Student Projects</title>
+  </head>
+  <body>
+  <!-- Nav bar -->
+  <script id="replace_with_navbar" src="projects/nav.js"></script>
+  <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid p-5">
+          <div class="container text-center">
+            <h1 class="display-4 pb-2" style="color:blue">Title</h1>   
+          </div>
+        </div>
+        <body>
+            <p class="paragraph-margin"><strong>Students:</strong> Misti McLeod, Alexandra Roske, Trevor Juarez, Ashley Brunetti, 
+                Ivan Arellano, Brooke Fields, Riddock McCoy, Abigail Moberly, Gabriella 
+                Santana</p>
+            <p class="paragraph-margin"><strong>Mentors:</strong> Eva Mo and Eileen Kerr (History, MJC)
+            </p>
+            <p class="paragraph-margin"><strong>Problem:</strong>Local history in our community is very limited. We have a few 
+                places where parts of our story is told, but it isn’t very comprehensive. 
+                Our project is the beginning of a long-term term effort to fill in the gaps 
+                in our knowledge of our collective past.</p>
+            <P class="paragraph-margin"><strong>Solution:</strong> This is a public history project focusing on the local history of 
+                Stanislaus County in the 1920s. We recruited nine MJC students to learn 
+                how to do local history research, then they explored primary source 
+                documents and created a museum exhibit. We decided on this project as 
+                a first start to exhuming local history that is not easily found in our local 
+                museums or public spaces. The exhibit now resides in Founders Hall on 
+                MJC's East Campus, where students, faculty and staff can learn new 
+                stories about our collective past. We are currently working with a new 
+                group of students on another aspect of our local history: redlining and 
+                housing segregation in the 1930s and 1940s. We are collaborating with 
+                community groups, MJC faculty and the MJC Democracy in the Public 
+                Space lecture series to present our findings and offer solutions this fall.
+                
+                </p>
+            <img src="" alt="">   
+        </body>
+       </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
