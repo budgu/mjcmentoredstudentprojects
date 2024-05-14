@@ -14,6 +14,18 @@
     background-size: cover;
     background-position: center;
   }
+  .imgsize{
+    object-fit:contain;
+    height:600px;
+    background-color:black;
+  }
+  .carousel-fit{
+    object-fit:contain;
+    width:75%;
+    height:600px;
+    margin:auto;
+    margin-bottom:5%;
+  }
 </style>
 <html lang="en">
   <head>
@@ -38,12 +50,40 @@
             <p class="paragraph-margin"><strong>Mentors:</strong> Travis Silvers (Musics, MJC)</P>
             <p class="paragraph-margin"><strong>Problem:</strong> To explore the construction, tuning and preformance of handmade instruments</P>
             <P class="paragraph-margin"><strong>Solution:</strong> Each student will build one instrument from the following instrument families: chordophones, idiophones, aerophones, membranophones</P>
-            <img src="../../images/class/makerspaceInstrument/instrument1.png" alt="Instrument photo2"> 
-            <img src="../../images/class/makerspaceInstrument/instrument2.png" alt="Instrument photo2">   
-            <img src="../../images/class/makerspaceInstrument/instrument3.png" alt="Instrument photo3">   
-            <img src="../../images/class/makerspaceInstrument/instrument4.png" alt="Instrument photo4">     
-        </body>
+     
+            <!-- Carousel Layout, be sure to carryover carousel-fit and imgsize classes-->
+       <div class = "carousel-fit">
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+           <div class="carousel-item active" data-bs-interval="5000">
+              <em>Instrument goal 1: Drum.</em>
+              <img src="../../images/class/makerspaceInstrument/instrument4.png" class="d-block w-100 imgsize" alt="Photo of a drum.">     
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <em>Instrument goal 2: Flute.</em>
+              <img src="../../images/class/makerspaceInstrument/instrument3.png" class="d-block w-100 imgsize" alt="Photo of a flute.">   
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <em>Instrument goal 3: Pan Pipes.</em>
+              <img src="../../images/class/makerspaceInstrument/instrument2.png" class="d-block w-100 imgsize" alt="Photo of pan pipes.">   
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <em>Instrument goal 4: Lute.</em>
+              <img src="../../images/class/makerspaceInstrument/instrument1.png" class="d-block w-100 imgsize" alt="Photo of a lute."> 
+           </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
        </div>
+      </div>                
+      </body>
+     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
