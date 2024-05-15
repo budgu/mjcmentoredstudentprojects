@@ -1,4 +1,4 @@
-// needed to call nav bar script by replacing script with nav.html
+// needed to call nav bar script by replacing script with nav copy.html, use for actual project pages
 fetch('../nav copy.html')
 .then(res => res.text())
 .then(text => {
