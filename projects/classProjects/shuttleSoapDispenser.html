@@ -1,115 +1,105 @@
-<!doctype html>
-<style>
-  .paragraph-margin {
-    margin-left: 50px;
-    margin-top: 25px;
-  }
-  .jumbotron{
-    background-color: #B7FCF9;
-    border: 2px solid black;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .border-cutoff{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: white;
-    min-height: 100vh; /* Ensures the container spans the full height */
-    display: flex;
-    flex-direction: column;
-  }
-  body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh; /* Ensures the background image spans the full height */
-    display: flex;
-    flex-direction: column;
-  }
-  .container-fluid {
-    flex: 1; /* Ensures the content fills the remaining space */
-  }
-  .imgsize{
-    object-fit: contain;
-    height: 600px;
-    background-color: black;
-  }
-  .carousel-fit{
-    object-fit: contain;
-    width: 75%;
-    height: 600px;
-    margin: auto;
-  }
-</style>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>MJC Innovation Center: Mentored Student Projects</title>
-  </head>
-  <body>
-    <!-- Nav bar -->
-    <script id="replace_with_navbar" src="../nav copy.js"></script>
-    <div class="border-cutoff">
-      <div class="container-fluid">
-        <div class="jumbotron jumbotron-fluid p-5">
-          <div class="container text-center">
-            <h1 class="display-4 pb-2" style="color:blue"><strong>Shuttle Soap Dispensers</strong></h1>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJC Innovation Center: Mentored Student Projects</title>
+  <style>
+    .paragraph-margin {
+      margin-left: 50px;
+      margin-right: 25px;
+      margin-top: 25px;
+    }
+    html {
+      background-color: white;
+    }
+    .border-cutoff {
+      margin-left: 15%;
+      margin-right: 15%;
+      background-color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .jumbotron {
+      background-color: #B7FCF9;
+      border: 2px solid black;
+    }
+    .imgsize {
+      object-fit: contain;
+      height: 600px;
+      background-color: black;
+    }
+    .carousel-fit {
+      object-fit: contain;
+      width: 45%;
+      margin: auto;
+    }
+    body {
+      background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-fluid {
+      flex: 1;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Nav bar -->
+  <script id="replace_with_navbar" src="../nav copy.js"></script>
+  
+  <div class="border-cutoff">
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid p-5">
+        <div class="container text-center">
+          <h1 class="display-4 pb-2" style="color:blue"><strong>Shuttle Soap Dispensers</strong></h1>
         </div>
-        <div>
-          <p class="paragraph-margin"><strong>Students:</strong> Students in Engineering 100 Class (Intro to Engineering)</p>
-          <p class="paragraph-margin"><strong>Mentors:</strong> Jeremy Wilson (Engineering, MJC)</p>
-          <p class="paragraph-margin"><strong>Problem:</strong>The Shower Shuttle, the mobile shower service that brings hot 
-            showers to the region’s homeless population had an issue with their 
-            shampoo dispensers. The lids were being bumped off during use and 
-            cracking after hitting the floor of the shower. The lids are not available 
-            individually, so it was necessary to purchase new dispensers each time a 
-            lid cracked. Dean Dodd, founder of the Shower Shuttle, approached 
-            Professor Deborah Gilbert about the problem who mentioned it to 
-            Jeremy Wilson, professor of Engineering.</p>
-          <p class="paragraph-margin"><strong>Solution:</strong> Professor Wilson brought the problem to the students of his 
-            Intro to Engineering course. Each of the students designed a replacement 
-            lid in Fusion 360, a 3D design program for mechanical parts. In early 
-            2023, the first prototype was 3D printed and delivered for trial use. The 
-            MJC Innovation Center will continue to provide 3D printed lids as needed 
-            for the Shower Shuttle.</p>
-        </div>
-        <!-- Carousel Layout, be sure to carry over carousel-fit and imgsize classes -->
-        <div class="carousel-fit">
-          <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <em>The shower shuttle bus.</em>
-                <img src="../../images/class/showerShuttle.png" class="d-block w-100 imgsize" alt="Shower Shuttle Bus">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <em>The standard soap dispenser supplied.</em>
-                <img src="../../images/class/SoapDispenser.png" class="d-block w-100 imgsize" alt="Standard Soap Dispenser">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <em>3D model made for modified soap tray.</em>
-                <img src="../../images/class/SoapDispenserModel.png" class="d-block w-100 imgsize" alt="3D Soap Dispenser Tray Model">
-              </div>
+      </div>
+      
+      <div>
+        <p class="paragraph-margin"><strong>Students:</strong> Students in Engineering 100 Class (Intro to Engineering)</p>
+        <p class="paragraph-margin"><strong>Mentors:</strong> Jeremy Wilson (Engineering, MJC)</p>
+        <p class="paragraph-margin"><strong>Problem:</strong> The Shower Shuttle, the mobile shower service that brings hot showers to the region’s homeless population had an issue with their shampoo dispensers. The lids were being bumped off during use and cracking after hitting the floor of the shower. The lids are not available individually, so it was necessary to purchase new dispensers each time a lid cracked. Dean Dodd, founder of the Shower Shuttle, approached Professor Deborah Gilbert about the problem who mentioned it to Jeremy Wilson, professor of Engineering.</p>
+        <p class="paragraph-margin"><strong>Solution:</strong> Professor Wilson brought the problem to the students of his Intro to Engineering course. Each of the students designed a replacement lid in Fusion 360, a 3D design program for mechanical parts. In early 2023, the first prototype was 3D printed and delivered for trial use. The MJC Innovation Center will continue to provide 3D printed lids as needed for the Shower Shuttle.</p>
+      </div>
+      
+      <!-- Carousel Layout -->
+      <div class="carousel-fit">
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <em>The shower shuttle bus.</em>
+              <img src="../../images/class/showerShuttle.png" class="d-block w-100 imgsize" alt="Shower Shuttle Bus">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item" data-bs-interval="5000">
+              <em>The standard soap dispenser supplied.</em>
+              <img src="../../images/class/SoapDispenser.png" class="d-block w-100 imgsize" alt="Standard Soap Dispenser">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <em>3D model made for modified soap tray.</em>
+              <img src="../../images/class/SoapDispenserModel.png" class="d-block w-100 imgsize" alt="3D Soap Dispenser Tray Model">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,99 +1,85 @@
-<!doctype html>
-<style>
-  .paragraph-margin {
-    margin-left: 50px;
-    margin-top: 25px;
-  }
-  .jumbotron{
-    background-color: #B7FCF9;
-    border:2px solid black;
-  }
-  html{
-    background-color: white;
-  }
-  .indent{
-    margin-left: 5%;
-  }
-  .border-cutoff{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: white;
-  }
-  .imgsize{
-    object-fit:contain;
-    height:600px;
-    background-color:black;
-  }
-  .carousel-fit{
-    object-fit:contain;
-    width:75%;
-    height:600px;
-    margin:auto;
-  }
-  body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-</style>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>MJC Innovation Center: Mentored Student Projects</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJC Innovation Center: Mentored Student Projects</title>
+  <style>
+    .paragraph-margin {
+      margin-left: 50px;
+      margin-right: 25px;
+      margin-top: 25px;
+    }
+    html {
+      background-color: white;
+    }
+    .border-cutoff {
+      margin-left: 15%;
+      margin-right: 15%;
+      background-color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .jumbotron {
+      background-color: #B7FCF9;
+      border: 2px solid black;
+    }
+    .imgsize {
+      object-fit: contain;
+      height: 600px;
+      background-color: black;
+    }
+    .carousel-fit {
+      object-fit: contain;
+      width: 45%;
+      margin: auto;
+    }
+    body {
+      background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-fluid {
+      flex: 1;
+    }
+  </style>
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
   <!-- Nav bar -->
   <script id="replace_with_navbar" src="../nav copy.js"></script>
-  <div class = "border-cutoff">
-  <div class="container-fluid">
-        <div class="jumbotron jumbotron-fluid p-5">
-          <div class="container text-center">
-            <h1 class="display-4 pb-2"><strong>MJC Music Ambassadors</strong></h1>   
-          </div>
+  
+  <div class="border-cutoff">
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid p-5">
+        <div class="container text-center">
+          <h1 class="display-4 pb-2"><strong>MJC Music Ambassadors</strong></h1>   
         </div>
-        <body>
-            <p class="paragraph-margin"><strong>Students:</strong></p>
-            <div class = "indent">
-                <p class = "paragraph-margin"><strong>Music Therapy:</strong>
-                Charlize Prize, Angel Gomez, Katie Overton, Megan 
-                Torkelson, Jack Douglas
-                </p>
-                <p class = "paragraph-margin"><strong>Music Business & Industry:</strong>
-                  Gryphon Reale, Peyton Toste-Starkweather, 
-                  Louis Tran, Osmany Caro, Ryan Gurule
-                </p>
-                <p class = "paragraph-margin"><strong>Music Education:</strong>
-                  Damien Ortega, Johan Espadas, Brent Yazzie, Samson 
-                  Uptegraft-Brown, Andrew Mendoza</p>
-              </div>
-            <p class="paragraph-margin"><strong>Mentor:</strong>Travis Silvers</p>
-            <p class="paragraph-margin"><strong>Problem:</strong>:
-              Lack of access to music instruction, instruments, and private 
-              instruction in areas of music that are of most interest to community 
-              youth; and lack of opportunities to explore and become knowledgeable 
-              about possible educational & career paths in music.</p>
-            <P class="paragraph-margin"><strong>Solution:</strong>
-              We have developed partnerships and collaborations with 
-              several non-profits and local businesses to provide music education, 
-              music therapy services, performance opportunities, and event 
-              organization and support to those in the community who have limited 
-              access to these resources. The community benefits from the increased 
-              presence and interaction with music and the arts and our students get 
-              the professional experience as music educators, music therapists and 
-              various roles in music technology and industry. This exploration will help 
-              them clarify their educational and career goals.
-              </p>
-       </div>
-
-       <!-- Carousel Layout, be sure to carryover carousel-fit and imgsize classes-->
-       <div class = "carousel-fit">
+      </div>
+      <div>
+        <p class="paragraph-margin"><strong>Students:</strong></p>
+        <div class="indent">
+          <p class="paragraph-margin"><strong>Music Therapy:</strong> Charlize Prize, Angel Gomez, Katie Overton, Megan Torkelson, Jack Douglas</p>
+          <p class="paragraph-margin"><strong>Music Business & Industry:</strong> Gryphon Reale, Peyton Toste-Starkweather, Louis Tran, Osmany Caro, Ryan Gurule</p>
+          <p class="paragraph-margin"><strong>Music Education:</strong> Damien Ortega, Johan Espadas, Brent Yazzie, Samson Uptegraft-Brown, Andrew Mendoza</p>
+        </div>
+        <p class="paragraph-margin"><strong>Mentor:</strong> Travis Silvers</p>
+        <p class="paragraph-margin"><strong>Problem:</strong> Lack of access to music instruction, instruments, and private instruction in areas of music that are of most interest to community youth; and lack of opportunities to explore and become knowledgeable about possible educational & career paths in music.</p>
+        <p class="paragraph-margin"><strong>Solution:</strong> We have developed partnerships and collaborations with several non-profits and local businesses to provide music education, music therapy services, performance opportunities, and event organization and support to those in the community who have limited access to these resources. The community benefits from the increased presence and interaction with music and the arts and our students get the professional experience as music educators, music therapists and various roles in music technology and industry. This exploration will help them clarify their educational and career goals.</p>
+      </div>
+      
+      <!-- Carousel Layout -->
+      <div class="carousel-fit">
         <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-           <div class="carousel-item active" data-bs-interval="5000">
+            <div class="carousel-item active" data-bs-interval="5000">
               <em>Teaching 7th graders how to use a guitar.</em>
               <img src="../../images/clubs/music ambassadors teaching 7th.png" class="d-block w-100 imgsize" alt="Teaching 7th graders how to use a guitar">
             </div>
@@ -104,7 +90,7 @@
             <div class="carousel-item" data-bs-interval="5000">
               <em>Ambassador student concert.</em>
               <img src="../../images/clubs/musicambassador3.png" class="d-block w-100 imgsize" alt="Ambassador concert">
-           </div>
+            </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -112,11 +98,13 @@
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="visually-hidden">Next</span>
-         </button>
-       </div>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>

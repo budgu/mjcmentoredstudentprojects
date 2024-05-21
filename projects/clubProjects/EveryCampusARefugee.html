@@ -8,18 +8,22 @@
     .paragraph-margin {
       margin-left: 50px;
       margin-right: 25px;
+      margin-top: 25px;
     }
-    html{
+    html {
       background-color: white;
     }
-    .border-cutoff{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: white;
-  }
+    .border-cutoff {
+      margin-left: 15%;
+      margin-right: 15%;
+      background-color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
     .jumbotron {
       background-color: #B7FCF9;
-      border: 2px solid black; 
+      border: 2px solid black;
     }
     .imgsize {
       object-fit: contain;
@@ -35,6 +39,14 @@
       background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
       background-size: cover;
       background-position: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-fluid {
+      flex: 1;
     }
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -44,61 +56,46 @@
   <script id="replace_with_navbar" src="../nav copy.js"></script>
   
   <div class="border-cutoff">
-    <div class = "container-fluid">
-    <div class="jumbotron jumbotron-fluid p-5">
-      <div class="container text-center">
-        <h1 class="display-4 pb-2"><strong>MJC Every Campus A Refugee - Student Resettlement Team in Partnership with World Relief</strong></h1>   
-      </div>
-    </div>
-    <body>
-      <div class = "border-cutoff">
-      <p class="paragraph-margin"><strong>Student:</strong> Jovan Sangha, Norman Childress, Noorin Ghafoori, Jorge Nino Manzo</p>
-      <p class="paragraph-margin"><strong>Mentors:</strong> Ruth Luman</p>
-      <p class="paragraph-margin"><strong>Problem:</strong> Resettlement and integration of newcomers into the local community takes a literal village of support. 
-        Thousands of people fleeing war, trumoil, and persecution have made their way to the Central Valley. Refugee resettlement agencies, such as 
-        World Relief, are given only ninety days to support new refugees in their integration with the local community. The needs of newcomers are significant 
-        and challenging for newcomers themselves, and often overwelm resettlement agency staff.    
-        </p>
-      <p class="paragraph-margin"><strong>Solution:</strong> Through <i>World Relief's</i> "Good Neighbor" team model being applied to <i>Every Campus A Refugee's</i> 
-        goal of involving institutions of higher education in the refugee resettlement process, and the <i>Learning-Aligned Employment</i> program's objective of 
-        supporting students in work-based learning and research, a team of MJC students spent Spring 2024 learning about Syrian culture 
-        and the refugee resettlement process by journeying alongside a newly-arrived family of seven in their adjustment to their new community. Student resettlement 
-        varied from gathering household donations, chaueffeuring to medical appointments, navigating the maze of county offices and resources, employment searches, 
-        instruction on U.S. cultural norms/laws, school registration, public transportation use, establishing utilities, paying rent, and setting up bank accounts to name 
-        just a few tasks. Along the way, students built relationships and friendships with one another and the family, as they learned that resettlement work is best done 
-        by involving the skills of a variety of individuals working together.
-        </p>
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid p-5">
+        <div class="container text-center">
+          <h1 class="display-4 pb-2"><strong>MJC Every Campus A Refugee - Student Resettlement Team in Partnership with World Relief</strong></h1>   
         </div>
-
-        <!-- Carousel Layout, be sure to carryover carousel-fit and imgsize classes-->
-          <div class = "carousel-fit">
-           <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <em>The <i>Every Campus A Refugee</i> team.</em>
-                <img src="../../images/clubs/EveryCampusARefugeeTeamPhoto.png" class="d-block w-100 imgsize" alt="Example of Innovation Portraits from the Exhibit" class="img-fluid mx-auto d-block">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <em>An cultural meal cooked by the sponsored family.</em>
-                <img src="../../images/clubs/EveryCampusARefugeeCulturalFood.png" class="d-block w-100 imgsize" alt="LAO Youth Group Photo">
-              </div>
-           <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+      </div>
+      
+      <div>
+        <p class="paragraph-margin"><strong>Student:</strong> Jovan Sangha, Norman Childress, Noorin Ghafoori, Jorge Nino Manzo</p>
+        <p class="paragraph-margin"><strong>Mentors:</strong> Ruth Luman</p>
+        <p class="paragraph-margin"><strong>Problem:</strong> Resettlement and integration of newcomers into the local community takes a literal village of support. Thousands of people fleeing war, turmoil, and persecution have made their way to the Central Valley. Refugee resettlement agencies, such as World Relief, are given only ninety days to support new refugees in their integration with the local community. The needs of newcomers are significant and challenging for newcomers themselves and often overwhelm resettlement agency staff.</p>
+        <p class="paragraph-margin"><strong>Solution:</strong> Through <i>World Relief's</i> "Good Neighbor" team model being applied to <i>Every Campus A Refugee's</i> goal of involving institutions of higher education in the refugee resettlement process, and the <i>Learning-Aligned Employment</i> program's objective of supporting students in work-based learning and research, a team of MJC students spent Spring 2024 learning about Syrian culture and the refugee resettlement process by journeying alongside a newly-arrived family of seven in their adjustment to their new community. Student resettlement varied from gathering household donations, chauffeuring to medical appointments, navigating the maze of county offices and resources, employment searches, instruction on U.S. cultural norms/laws, school registration, public transportation use, establishing utilities, paying rent, and setting up bank accounts to name just a few tasks. Along the way, students built relationships and friendships with one another and the family, as they learned that resettlement work is best done by involving the skills of a variety of individuals working together.</p>
+      </div>
+      
+      <!-- Carousel Layout -->
+      <div class="carousel-fit">
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <em>The <i>Every Campus A Refugee</i> team.</em>
+              <img src="../../images/clubs/EveryCampusARefugeeTeamPhoto.png" class="d-block w-100 imgsize" alt="Example of Innovation Portraits from the Exhibit">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <em>A cultural meal cooked by the sponsored family.</em>
+              <img src="../../images/clubs/EveryCampusARefugeeCulturalFood.png" class="d-block w-100 imgsize" alt="LAO Youth Group Photo">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-           </button>
-           <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-           </button>
-         </div>
-        </div>
-
-
-        <div class="col-md-8">
+          </button>
         </div>
       </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

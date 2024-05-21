@@ -1,92 +1,80 @@
-<!doctype html>
-<style>
-  .paragraph-margin {
-    margin-left: 50px;
-    margin-top: 25px;
-  }
-  .jumbotron{
-    background-color: #B7FCF9;
-    border:2px solid black;
-  }
-  html{
-    background-color: white;
-  }
-  .imgsize{
-    object-fit:contain;
-    height:600px;
-    background-color:black;
-  }
-  .border-cutoff{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: white;
-  }
-  .carousel-fit{
-    object-fit:contain;
-    width:75%;
-    height:600px;
-    margin:auto;
-  }
-  body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-</style>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>MJC Innovation Center: Mentored Student Projects</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJC Innovation Center: Mentored Student Projects</title>
+  <style>
+    .paragraph-margin {
+      margin-left: 50px;
+      margin-right: 25px;
+      margin-top: 25px;
+    }
+    html {
+      background-color: white;
+    }
+    .border-cutoff {
+      margin-left: 15%;
+      margin-right: 15%;
+      background-color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .jumbotron {
+      background-color: #B7FCF9;
+      border: 2px solid black;
+    }
+    .imgsize {
+      object-fit: contain;
+      height: 600px;
+      background-color: black;
+    }
+    .carousel-fit {
+      object-fit: contain;
+      width: 45%;
+      margin: auto;
+    }
+    body {
+      background-image: url(https://static.vecteezy.com/system/resources/previews/000/277/973/original/vector-pastel-background.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-fluid {
+      flex: 1;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
   <!-- Nav bar -->
   <script id="replace_with_navbar" src="../nav copy.js"></script>
-  <div class = "border-cutoff">
-  <div class="container-fluid">
-        <div class="jumbotron jumbotron-fluid p-5">
-          <div class="container text-center">
-            <h1 class="display-4 pb-2"><strong>Hambastagi Zanan</strong></h1>   
-          </div>
+  
+  <div class="border-cutoff">
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid p-5">
+        <div class="container text-center">
+          <h1 class="display-4 pb-2"><strong>Hambastagi Zanan</strong></h1>   
         </div>
-        <body>
-            <p class="paragraph-margin"><strong>Students:</strong>
-              Shabnam Mujaddidi, Shamim Mujaddidi, Laila Noorani, Ghazal 
-              Noorani, Farishta Shams</p>
-            <p class="paragraph-margin"><strong>Mentors:</strong>Ruth Luman</p>
-            <p class="paragraph-margin"><strong>Problem:</strong>
-              With over 250 Afghan women refugee students at MJC, many 
-              of whom are new arrivals, it is important for students to be able to access 
-              resources and linguistically and culturally-relevant support to address 
-              pressing barriers to education and their own engagement in the 
-              community. </p>
-            <P class="paragraph-margin"><strong>Solution:</strong>
-              To this end, the MJC hambastagi zanan (meaning 'women 
-              united' in Dari) was begun by recently-arrived Afghan women students. 
-              Drawing on the cultural institution of women's associations to encourage 
-              women to gather, share resources, build community, and find solutions 
-              to collective struggles, the hambastagi zanan met regularly over fall and 
-              spring semesters. During these gatherings, women hambastagi leaders 
-              brought in community and college guests to share financial, legal, 
-              entrepreneurial, and academic resources. Identifying the need to 
-              network, the women have worked with the founders of a community 
-              networking app, Abule, to make it more linguistically relevant to Afghan 
-              women. The women also identified the lack of access to driving education 
-              as a major barrier to engaging fully in school and the community. To that 
-              end, the women organized a series of English for Driving workshops with 
-              the possibility of receiving free behind-the-wheel driving lessons from 
-              local driving schools.
-              </p>
-
-
-                     <!-- Carousel Layout, be sure to carryover carousel-fit and imgsize classes-->
-       <div class = "carousel-fit">
+      </div>
+      
+      <div>
+        <p class="paragraph-margin"><strong>Students:</strong> Shabnam Mujaddidi, Shamim Mujaddidi, Laila Noorani, Ghazal Noorani, Farishta Shams</p>
+        <p class="paragraph-margin"><strong>Mentors:</strong> Ruth Luman</p>
+        <p class="paragraph-margin"><strong>Problem:</strong> With over 250 Afghan women refugee students at MJC, many of whom are new arrivals, it is important for students to be able to access resources and linguistically and culturally-relevant support to address pressing barriers to education and their own engagement in the community.</p>
+        <p class="paragraph-margin"><strong>Solution:</strong> To this end, the MJC hambastagi zanan (meaning 'women united' in Dari) was begun by recently-arrived Afghan women students. Drawing on the cultural institution of women's associations to encourage women to gather, share resources, build community, and find solutions to collective struggles, the hambastagi zanan met regularly over fall and spring semesters. During these gatherings, women hambastagi leaders brought in community and college guests to share financial, legal, entrepreneurial, and academic resources. Identifying the need to network, the women have worked with the founders of a community networking app, Abule, to make it more linguistically relevant to Afghan women. The women also identified the lack of access to driving education as a major barrier to engaging fully in school and the community. To that end, the women organized a series of English for Driving workshops with the possibility of receiving free behind-the-wheel driving lessons from local driving schools.</p>
+      </div>
+      
+      <!-- Carousel Layout -->
+      <div class="carousel-fit">
         <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-           <div class="carousel-item active" data-bs-interval="5000">
+            <div class="carousel-item active" data-bs-interval="5000">
               <em>Advertisement fliers sent out for Hambastagi Zanan.</em>
               <img src="../../images/clubs/hambastagicZanan.png" class="d-block w-100 imgsize" alt="Hamgastagi Zanan flier.">
             </div>
@@ -101,13 +89,13 @@
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="visually-hidden">Next</span>
-         </button>
-       </div>
-      </div> 
-     </body>
-     </div>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
